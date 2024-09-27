@@ -14,7 +14,8 @@ Deze leertaak wordt behandeld in sprint 2. Er worden verschillende workshops aan
 
 - [Sprint planning](sprint-planning.md) - Maandag week 1
 - [Briefing/debriefing](briefing-debriefing.md) - Maandag week 1
-- [Prototyping](prototyping.md) - Woensdag week 1
+- [Prototyping](prototyping.md)
+- [Code/Design review Prototype en HTML](code-design-review-prototype-en-html.md)
 - [Flow layout](flow-layout.md) 
 - [Typografie en leesbaarheid](typografie-en-leesbaarheid.md) 
 - [Code conventies](code-conventies.md) 
