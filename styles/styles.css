@@ -30,7 +30,7 @@ header {
     display:grid;
     grid-template-rows: 1fr;
     background-color: #F8E9C2;
-    padding: 10px 5px
+    padding: 10px 5px;
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
@@ -59,7 +59,7 @@ img {
 }
 
 .overons {
-    dipslay: flex;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -114,18 +114,14 @@ img {
 
 .section1 {
     position:absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    align-items: baseline;
     top: 100px;
 }
 
 .harry {
-    position: absolute;
-    display: block;
-    margin-left: auto
-    margin-right: auto;
-    width: 20%;
-    top: 70px;
+    /* position: absolute; */
+    width: 90%;
 }
 
 .detuintext {
@@ -141,14 +137,14 @@ img {
 }
 
 .workshopstitle {
-    grid-column: 1/2
-    grid-columns-start: 1;
+    grid-column: 1/2;
+    grid-column-start: 1;
 }
 
 .workshops {
 
     display:grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     gap: 50px;
 }
 
@@ -162,30 +158,29 @@ img {
 
 }
 .example2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: #ffffff;
     padding: 20px;
 
 }
 
-.example2 p {
-    overflow: hidden;
-    text-overflow: clip;
-    padding: 20px;
-    font-size: 1rem;
-    margin: 1;
-    background: white;
-    resize: vertical;
+.example2 h2 {
+    font-size: 16px;
 }
+
+
 
 .wholeworkshop {
     background-color: #F8E9C2;
-    color:#4F724;
+    color:#4F7242;
 }
 
 footer {
     background-color:#4F7242;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+
 }
 
 .map {
@@ -196,6 +191,11 @@ footer {
 .footerlogo {
     display: flex;
     justify-content: center;
+}
+
+.footerlogo img {
+    object-fit: contain;
+
 }
 
 @media only screen and (max-width: 900px) {
