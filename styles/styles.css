@@ -15,20 +15,10 @@ p {
 header {
     background-color: #F8E9C2;
     overflow:hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr 30% 1fr 1fr;
-}
-
-
-
-.logobiebinbloei {
     display: flex;
-    width:100px;
-    padding: 10px 10px;
 }
+
 .topnav {
-    display:grid;
-    grid-template-rows: 1fr;
     background-color: #F8E9C2;
     padding: 10px 5px;
     display: flex;
@@ -185,7 +175,7 @@ footer {
 
 .map {
     margin: 50px;
-    scale: 80%
+    scale: 80%;
 }
 
 .footerlogo {
