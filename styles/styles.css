@@ -1,1 +1,214 @@
-/* CSS */
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: 400;
+    src: local("Poppins"), url("../assets/fonts/Poppins-Regular.woff2") format("woff2");
+}
+
+p {
+    font-size: 16px;
+}
+
+header {
+    background-color: #F8E9C2;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 30% 1fr 1fr;
+}
+
+
+
+.logobiebinbloei {
+    display: flex;
+    width:100px;
+    padding: 10px 10px;
+}
+.topnav {
+    display:grid;
+    grid-template-rows: 1fr;
+    background-color: #F8E9C2;
+    padding: 10px 5px
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+
+.topnav a {
+    background-color: #4f7242;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.topnav a:hover {
+    background-color: #ffffff;
+    color:black;
+}
+
+.topnav a.active {
+    background-color: #94b787 ;
+}
+
+img {
+    width:100%;
+}
+
+.overons {
+    dipslay: flex;
+    justify-content: flex-end;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ground {
+    position:absolute;
+    top: 170px;
+    z-index: 1;
+}
+
+
+.plant1 {
+    z-index: 2;
+    grid-column-start: 1;
+    grid-column: 1/2;
+}
+
+.plant2 {
+    z-index: 2;
+    grid-column-start: 2;
+}
+
+.plant3 {
+    z-index: 2;
+    grid-column-start: 4;
+}
+
+.plant4 {
+    z-index: 2;
+    grid-column-start: 5;
+}
+
+.welkom {
+    background-color: #F8E9C2;
+    text-align: center;
+    padding:70px;
+
+}
+
+.welkom button{
+    background-color: #4F7242;
+    border-width: 2px;
+    font-size: 24px;
+    color:#F8E9C2;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.section1 {
+    position:absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    top: 100px;
+}
+
+.harry {
+    position: absolute;
+    display: block;
+    margin-left: auto
+    margin-right: auto;
+    width: 20%;
+    top: 70px;
+}
+
+.detuintext {
+    background-color:#4F7242;
+    color:#ffffff;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.detuin {
+    transform: perspective(300px) rotateX(10deg) scale(42%) scaleX(1.7);
+}
+
+.workshopstitle {
+    grid-column: 1/2
+    grid-columns-start: 1;
+}
+
+.workshops {
+
+    display:grid;
+    grid-template-columns: 70% 30%;
+    gap: 50px;
+}
+
+.example1 {
+    background-color: #ffffff;
+    padding: 50px;
+    grid-column-start: 1;
+    border-radius: 10px;
+    grid-row: 1/6;
+
+
+}
+.example2 {
+    background-color: #ffffff;
+    padding: 20px;
+
+}
+
+.example2 p {
+    overflow: hidden;
+    text-overflow: clip;
+    padding: 20px;
+    font-size: 1rem;
+    margin: 1;
+    background: white;
+    resize: vertical;
+}
+
+.wholeworkshop {
+    background-color: #F8E9C2;
+    color:#4F724;
+}
+
+footer {
+    background-color:#4F7242;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.map {
+    margin: 50px;
+    scale: 80%
+}
+
+.footerlogo {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .map {
+      display:none;
+    }
+
+    .plant4 {
+        display:none;
+    }
+
+
+    .plant1 {
+        display:none;
+    }
+  }

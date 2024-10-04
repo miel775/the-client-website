@@ -3,92 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
     <!-- Dit is de header van de website waar alle navigatie buttons staan -->
-<header>
-    <button id="Home">Home</button>
-    <button id="Opslag">de Tuin</button>
-    <img src="assets/Logo.png" alt="logo">
-    <button id="Agenda">Agenda</button>
-    <button id="Contact">Contact</button>
-</header>
-
+    <header class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="opslag.html">Opslag</a>
+        <!-- Hier moet dus nog een logo staan maar dat komt er niet van -->
+        <a href="overons.html" class="overons">Over Ons</a>
+        <a href="contact.html" class="contact">Contact</a>
+    </header> 
+<body>
 <main>
+
+
    <!-- Dit is de achtergrond en de grond van 'de tuin' dit wordt met CSS later samengevoegd en hier komen de groeiende planten -->
     <div class="background-element">
         <img src="assets/sky.png" alt="sky">
     </div>
-    <div class="ground">
-        <img src="assets/ground.png" alt="ground">
-    </div>
  <!-- In de grond zitten zaadjes die met CSS parallax uitkomen dit wordt later geanimeerd -->
-    <div class="harry">
-        <img src="assets/Neutraal.svg" alt="Harry">
+ <section class="section1">
+ <div class="plant1">
+    <img src="assets/plant side.png" alt="plant">
+</div>
+<div class="plant2">
+    <img src="assets/plant side.png" alt="plant">
+</div>
+ <div>
+        <img src="assets/Neutraal.svg" alt="Harry" class="harry">
     </div>
+<div class="plant3">
+        <img src="assets/plant side.png" alt="plant">
+</div>
+<div class="plant4">
+    <img src="assets/plant side.png" alt="plant">
+</div>
+</section>
+
+
+
 <!-- Harry is de mascotte van de bibliotheek Harry's humeur wordt bepaald door het weer hier verschijnt dan een grappige tekst bij -->
+</section>
 
 <section class="welkom">
     <h1>Welkom!</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia deserunt  mollit anim id est laborum.</p>
-<button id='button'>Sign up!</button>
+<button id='button'>Meld je nu aan</button>
 </section>
 
 
 <!-- De tuin bestaat uit de tuin met daarin de stekjes, zaadjes en de geveltuin. Wanneer hier op wordt geklikt dan ga je naar de pagina van de stekjes, zaden of geveltuin -->
-<section class="detuin">
+<section class="detuintext">
     <h1>de Tuin</h1>
-    <img src="assets/soil.png" alt="soilground">
+    <img src="assets/soil.png" alt="soilground" class="detuin">
 </section>
 
 
 <!-- In deze section komen de workshops die worden weergegeven in containers -->
-<section>
-    <h1>Workshops</h1>
-    <article>
-        <img src="plants" alt="example">
+<section class="wholeworkshop" >
+    <h1 class="workshopstitle">Workshops</h1>
+
+    <div class="workshops">
+    <article class='example1'>
+        <img src="assets/plants.png" alt="example1">
         <h2>Activity</h2>
         <p>Lorem ipsum dolor sit amet. Non doloribus quod non odit tenetur et omnis totam non consequatur quae ut commodi placeat sed laboriosam fugiat rem earum neque. Eum itaque labore aut quod deserunt et odit tempore sed  omnis voluptatem quo aliquid saepe qui enim aliquam. Sit temporibus nisi aut veniam minus nam maxime commodi hic quia internos.</p>
         <h2>12 September 2024</h2> <h2>18:00-19:00</h2>
     </article>
 
-    <article>
-        <img src="plants" alt="example">
+    <article class='example2'>
+        <img src="assets/plants.png" alt="example2">
         <h2>Activity</h2>
-        <p>Lorem ipsum dolor sit amet. Non doloribus quod non odit tenetur et omnis totam non consequatur quae ut commodi placeat sed laboriosam fugiat rem earum neque. Eum itaque labore aut quod deserunt et odit tempore sed  omnis voluptatem quo aliquid saepe qui enim aliquam. Sit temporibus nisi aut veniam minus nam maxime commodi hic quia internos.</p>
+        <p>Lorem ipsum...</p>
         <h2>12 September 2024</h2> <h2>18:00-19:00</h2>
     </article>
 
-    <article>
-        <img src="plants" alt="example">
+    <article class='example3'>
+        <img src="assets/plants.png" alt="example3">
         <h2>Activity</h2>
-        <p>Lorem ipsum dolor sit amet. Non doloribus quod non odit tenetur et omnis totam non consequatur quae ut commodi placeat sed laboriosam fugiat rem earum neque. Eum itaque labore aut quod deserunt et odit tempore sed  omnis voluptatem quo aliquid saepe qui enim aliquam. Sit temporibus nisi aut veniam minus nam maxime commodi hic quia internos.</p>
+        <p>Lorem ipsum...</p>
         <h2>12 September 2024</h2> <h2>18:00-19:00</h2>
     </article>
 
-    <article>
-        <img src="assets/plants.png" alt="example">
+    <article class='example4'>
+        <img src="assets/plants.png" alt="example4">
         <h2>Activity</h2>
-        <p>Lorem ipsum dolor sit amet. Non doloribus quod non odit tenetur et omnis totam non consequatur quae ut commodi placeat sed laboriosam fugiat rem earum neque. Eum itaque labore aut quod deserunt et odit tempore sed  omnis voluptatem quo aliquid saepe qui enim aliquam. Sit temporibus nisi aut veniam minus nam maxime commodi hic quia internos.</p>
+        <p>Lorem ipsum...</p>
         <h2>12 September 2024</h2> <h2>18:00-19:00</h2>
     </article>
 
-    <article>
-        <img src="assets/plants.png" alt="example">
+    <article class="example5">
+        <img src="assets/plants.png" alt="example5" >
         <h2>Activity</h2>
-        <p>Lorem ipsum dolor sit amet. Non doloribus quod non odit tenetur et omnis totam non consequatur quae ut commodi placeat sed laboriosam fugiat rem earum neque. Eum itaque labore aut quod deserunt et odit tempore sed  omnis voluptatem quo aliquid saepe qui enim aliquam. Sit temporibus nisi aut veniam minus nam maxime commodi hic quia internos.</p>
+        <p>Lorem ipsum..</p>
         <h2>12 September 2024</h2> <h2>18:00-19:00</h2>
     </article>
+</div>
 </section>
 </main>
 
 <footer>
-    <article>
-        <img src="assets/Logo.png" alt="logo">
+    <article class="footerlogo">
+        <img src="assets/Logo.png" alt="logo" class="bieblogoklein"> 
     </article>
 
-    <article>
-         <!-- Hier komt de map doormiddel van javascript -->
+    <article class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1290.7823408325253!2d4.92477478768171!3d52.3582244738981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6097132bffcc7%3A0x290544c1d1a9e37c!2sOBA%20Linnaeus!5e0!3m2!1snl!2snl!4v1727865501729!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
 
     <article> 
@@ -97,7 +117,6 @@
             info@example.com
             1820=9303480237</p>
 
-<!-- Social Media Icons by NiftyButtons https://niftybuttons.com -->
  <div style="display: flex; flex-wrap:wrap; align-items: center; justify-content: center;">
     <a href="true" target="_blank" rel="noopener noreferrer" style="text-decoration:none;border:0;width:36px;height:36px;padding:2px;margin:5px;color:#3c593e;border-radius:50%;background-color:#f8e9c2;"><svg class="niftybutton-facebook" style="display:block;fill:currentColor" data-donate="true" data-tag="fac" data-name="Facebook" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><title>Facebook social icon</title>
     <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path>
