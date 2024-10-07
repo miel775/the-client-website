@@ -2,6 +2,7 @@ body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
+
 @font-face {
     font-family: Poppins;
     font-weight: 400;
@@ -12,16 +13,28 @@ p {
     font-size: 16px;
 }
 
+img {
+    width:100%;
+}
+
 header {
     background-color: #F8E9C2;
     overflow:hidden;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#myVideo {
+    width: 100%;
+    z-index: 0;
+    @media (max-width: 900px)
+     display: none; 
+    
 }
 
 .topnav {
     background-color: #F8E9C2;
     padding: 10px 5px;
-    display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
 }
@@ -44,48 +57,6 @@ header {
     background-color: #94b787 ;
 }
 
-img {
-    width:100%;
-}
-
-.overons {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.contact {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.ground {
-    position:absolute;
-    top: 170px;
-    z-index: 1;
-}
-
-
-.plant1 {
-    z-index: 2;
-    grid-column-start: 1;
-    grid-column: 1/2;
-}
-
-.plant2 {
-    z-index: 2;
-    grid-column-start: 2;
-}
-
-.plant3 {
-    z-index: 2;
-    grid-column-start: 4;
-}
-
-.plant4 {
-    z-index: 2;
-    grid-column-start: 5;
-}
-
 .welkom {
     background-color: #F8E9C2;
     text-align: center;
@@ -102,16 +73,13 @@ img {
     border-radius: 5px;
 }
 
-.section1 {
-    position:absolute;
-    display: flex;
-    align-items: baseline;
-    top: 100px;
-}
 
 .harry {
-    /* position: absolute; */
-    width: 90%;
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    left: 43%;
+    top: 30%;
 }
 
 .detuintext {
@@ -132,35 +100,50 @@ img {
 }
 
 .workshops {
-
     display:grid;
     grid-template-columns: 60% 40%;
     gap: 50px;
+    background-color: #F8E9C2;
 }
 
 .example1 {
     background-color: #ffffff;
-    padding: 50px;
+    padding: 20px;
+    margin: 10px;
     grid-column-start: 1;
-    border-radius: 10px;
     grid-row: 1/6;
-
-
+    border-radius: 10px;
 }
+
 .example2 {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr 1fr;
+    gap:-10px;
     background-color: #ffffff;
-    padding: 20px;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+}
 
+.textexmaple2 {
+    padding: 10px;
+    display: grid;
 }
 
 .example2 h2 {
-    font-size: 16px;
+    font-size: 40px;
+    margin-right: auto;
 }
 
+.example2 h3 {
+    font-size: 14px;
+}
 
+.example2 img {
+    width: 300px;
+
+}
 
 .wholeworkshop {
     background-color: #F8E9C2;
@@ -175,7 +158,9 @@ footer {
 
 .map {
     margin: 50px;
-    scale: 80%;
+    @media (max-width: 900px) {
+        display:none;
+    }
 }
 
 .footerlogo {
@@ -187,18 +172,3 @@ footer {
     object-fit: contain;
 
 }
-
-@media only screen and (max-width: 900px) {
-    .map {
-      display:none;
-    }
-
-    .plant4 {
-        display:none;
-    }
-
-
-    .plant1 {
-        display:none;
-    }
-  }
