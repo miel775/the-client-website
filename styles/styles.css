@@ -24,13 +24,49 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#myVideo {
+.section1 video:nth-child(1){
     width: 100%;
     z-index: 0;
+    display: block;
+
     @media (max-width: 900px)
      display: none; 
-    
+     
+    @media (max-width: 500px)
+     display: none; 
+
+    animation: plantgrow 1s linear;
 }
+
+.section1 video:nth-child(2){
+    width: 100%;
+    z-index: 0;
+    display:none;
+
+    @media (max-width: 900px)
+    display: block;
+
+    @media (max-width: 500px)
+    display: none; 
+}
+
+.section1 video:nth-child(3){
+    width: 100%;
+    z-index: 0;
+    display:none;
+
+    @media (max-width: 900px)
+    display: none; 
+
+    @media (max-width: 500px)
+    display: block; 
+}
+
+@keyframes plantgrow {
+    from {opacity: 0;};
+    to {opacity: 1;};
+}
+
 
 .topnav {
     background-color: #F8E9C2;
