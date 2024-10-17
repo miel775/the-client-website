@@ -17,11 +17,70 @@ img {
     width:100%;
 }
 
-header {
+.topnav {
     background-color: #F8E9C2;
     overflow:hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 30% 1fr 1fr;
+    @media (max-width: 500px) {
+        display:none;
+    }                    
+}
+
+.topnavmobile {
+    background-color: #F8E9C2;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    @media (min-width: 500px) {
+        display:none;
+    }          
+}
+
+
+.dropdownbutton {
+    background-color: #4F7242;
+    stroke: #ffff;
+    width: 100px;
+    margin: 10px;
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.sky {
+    width: 100%;
+    z-index: 0;
+    display: block;
+}
+
+.grass {
+    top: 250px;
+    min-height: 200px;
+
+}
+
+.parralax {
+    background-image: url("assets/ground");
+
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section1 video:nth-child(1){
@@ -77,11 +136,13 @@ header {
 
 .topnav a {
     background-color: #4f7242;
+    color: white;
     border-radius: 5px;
-    text-align: center;
+    display: flex;
     padding: 10px 10px;
+    height: 4vh;
     margin: 10px;
-    display: inline-block;
+    text-decoration: none;
 }
 
 .topnav a:hover {
@@ -91,6 +152,11 @@ header {
 
 .topnav a.active {
     background-color: #94b787 ;
+}
+
+.biebinbloei {
+    background-color: #4F7242;
+    border-radius: 2em;
 }
 
 .welkom {
@@ -146,12 +212,12 @@ header {
 } 
 
 .workshops {
-    @media only (max-width: 740px;) {
-    .workshops  { display:grid;
-    grid-template-columns: 60% 40%;
-    gap: 50px; 
+    display: grid;
+    grid-template-columns: 70% 30%;
+    @media (max-width: 900px) {
+        display:grid;
+        grid-template-columns: 1fr;
     }
-}
 }
 
 .example {
@@ -165,12 +231,17 @@ header {
 footer {
     background-color:#4F7242;
     display: flex;
+    @media  screen (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .bieblogoklein {
     display: flex;
     width: 200px;
     padding: 50px
+
 }
 
 .map {

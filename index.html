@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
         <title>Bieb in Bloei</title>
@@ -7,29 +7,46 @@
     </head>
 
 <body>
+    <header class="topnavmobile">
+            
+    <!-- Dit is de header voor de mobile app -->
+        <div class="dropdown">
+            <button>Home</button>
+            <div class="dropdown-content">
+                <a rel="noopener" target="_blank" href="https://blog.hubspot.com/">Opslag</a>
+                <a rel="noopener" target="_blank" href="https://academy.hubspot.com/">Over Ons</a>
+                <a rel="noopener" target="_blank" href="https://www.youtube.com/user/hubspot">Contact</a>
+            </div>
+    </div>
+          <img src="assets/Logo.png" alt="logo" class="biebinbloei">
+    </header>
+
+
     <!-- Dit is de header van de website waar alle navigatie buttons staan -->
     <header class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="opslag.html">Opslag</a>
-        <!-- Hier moet dus nog een logo staan maar dat komt er niet van -->
+        <img src="assets/Logo.png" alt="logo" class="biebinbloei">
         <a href="overons.html" class="overons">Over Ons</a>
         <a href="contact.html" class="contact">Contact</a>
     </header> 
     
     <main>
-
     <!-- In de grond zitten zaadjes die met CSS parallax uitkomen dit wordt later geanimeerd -->
         <section class="section1">
-            <video autoplay muted loop>
-                <source src="assets/Desktop.mp4" type="video/mp4">
-              </video>
-              <video autoplay muted loop>
-                <source src="assets/Tablet.mp4" type="video/mp4">
-              </video>
+   
               <!-- video:nth-child() -->
               <video autoplay muted loop>
                 <source src="assets/Mobile.mp4" type="video/mp4">
               </video>
+
+              <img src="assets/ground.png" class="parralax">
+              
+
+              <video autoplay muted loop>
+                <source src="assets/weather/slightlycloudy.mp4" type="video/mp4" class="sky">
+              </video>
+
                 <img src="assets/Neutraal.svg" alt="Harry" class="harry">
         </section>
 
