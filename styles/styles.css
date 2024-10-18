@@ -32,50 +32,59 @@ img {
     overflow:hidden;
     display: grid;
     grid-template-columns: 1fr 30%;
+    padding: 20px;
     @media (min-width: 500px) {
         display:none;
     }          
 }
 
-
-.dropdownbutton {
-    background-color: #4F7242;
-    stroke: #ffff;
-    width: 100px;
-    margin: 10px;
-    display: flex;
-    margin-left: 100px;
-    align-items: center;
+.topnavmobile img{
+    grid-column-start: 2;
 }
 
-.dropdown-content {
+.dropdown {
+    display: inline-block;
+    z-index: 2;
+  }
+
+.dropdown button {
+    color:#fff;
+    background-color: #4F7242;
+    width: 50px;
+    height: 50px;
+}
+  
+  .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    width: 50%;
+    overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    color: #fff;
+    background-color:#4F7242
 }
 
-
-.sky {
-    width: 100%;
-    z-index: 0;
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
-.grass {
-    top: 250px;
-    min-height: 200px;
-
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
 }
 
-.parralax {
-    background-image: url("assets/ground");
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
 
+
+.parralax {
+    background-image: url("file:///C:/Users/Miel%20van%20Sleeuwen/Documents/FdNd/Sprint%202/the-client-website/assets/ground.png");
     /* Full height */
     height: 100%;
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -85,7 +94,7 @@ img {
 
 .section1 video:nth-child(1){
     width: 100%;
-    z-index: 0;
+    z-index: -1;
     display: block;
 
     @media (max-width: 900px)
@@ -99,7 +108,7 @@ img {
 
 .section1 video:nth-child(2){
     width: 100%;
-    z-index: 0;
+    z-index: -1;
     display:none;
 
     @media (max-width: 900px)
@@ -111,7 +120,7 @@ img {
 
 .section1 video:nth-child(3){
     width: 100%;
-    z-index: 0;
+    z-index: -1;
     display:none;
 
     @media (max-width: 900px)
