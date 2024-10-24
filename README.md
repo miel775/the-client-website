@@ -13,7 +13,7 @@ Bieb in Bloei is een digitaal platform met daarop een overzicht van de duurzame 
   * [Licentie](#licentie)
 
 ## Intro
-In de opdracht wordt er een website gemaakt voor een opdrachtgever. De opdrachtgever die ik heb gekozen is Bieb in Bloei. Het is een bibliotheek die veel groen omvat. Het organiseert workshops om mentale problemen bij jongeren te voorkomen. Echter is het in het algemeen voor de mensen in de buurt Amsterdam-Oost. De briefing vond plaats op maandag 23 september, hier werd het idee toegelicht en hoe de opdrachtgever de website voor zich ziet. Hieruit is gekomen dat er al twee websites zijn gemaakt en hieruit moeten wij als groep een gebruiksvriendelijke webpagina maken.
+De opdracht is Bieb in Bloei, een bibliotheek die bijdraagt aan duurzame projecten. Er wordt een gebruiksvriendelijke website gemaakt die bedoeld is om meer mensen te overtuigen in de buurt. De website wordt een leuke uitnodiging voor de mensen. De opdrachtgever heeft aangegeven dat we er openminded in mogen gaan dus in deze ReadMe lees je de ideeen die worden voorgesteld dit wordt onderverdeeld in secties.
 
 Er zijn twee pagina's gebruikt als referentie
 Pagina 1: https://bieb-in-bloei.vercel.app/
@@ -61,7 +61,6 @@ Er is niet veel speicifiek op te merken aan de HTML. Er is vooral gebruik gemaak
 
 ## Bronnen
 Content is van de opdrachtgever
-Beeldmateriaal Homepage: https://www.vecteezy.com/
 Code:[W3School](https://www.w3schools.com) en [MDN
 ](https://developer.mozilla.org)
 
