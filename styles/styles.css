@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -45,6 +52,7 @@ img {
 .dropdown {
     display: inline-block;
     z-index: 2;
+
   }
 
 .dropdown button {
@@ -52,6 +60,7 @@ img {
     background-color: #4F7242;
     width: 50px;
     height: 50px;
+    border-radius: 10px;
 }
   
   .dropdown-content {
@@ -81,60 +90,94 @@ img {
 }
 
 
-.parralax {
-    background-image: url("file:///C:/Users/Miel%20van%20Sleeuwen/Documents/FdNd/Sprint%202/the-client-website/assets/ground.png");
-    /* Full height */
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.headerwall {
+    position: absolute;
+    scale: 120%;
+    right: 0%;
+    top: 600px;
+    @media (max-width: 1000px) {
+    position: absolute;
+    scale: 120%;
+    right: 0%;
+    top:330px;
+    @media (max-width: 500px) {
+        position: absolute;
+        right: -10%;
+        top:260px;
+    }}      
 }
 
-.section1 video:nth-child(1){
-    width: 100%;
-    z-index: -1;
-    display: block;
-
-    @media (max-width: 900px)
-     display: none; 
-     
-    @media (max-width: 500px)
-     display: none; 
-
-    animation: plantgrow 1s linear;
+.table {
+    @media (max-width: 1000px) {
+    position: absolute;
+    left:25%;
+    top: 500px;
+    @media (max-width: 500px) {
+        position: absolute;
+        left: -50%;
+        top: 450px;
+        scale: 120%
+        z-index: -1;
+    }}      
 }
 
-.section1 video:nth-child(2){
-    width: 100%;
-    z-index: -1;
-    display:none;
+.harry {
 
-    @media (max-width: 900px)
-    display: block;
-
-    @media (max-width: 500px)
-    display: none; 
+    @media (max-width: 1000px) {
+    position: absolute;
+    left: -10%;
+    top: 200px;
+    scale: 200%;
+    @media (max-width: 500px) {
+        position: absolute;
+        left: -50%;
+        top: 450px;
+        scale: 120%
+        z-index: -1;
+    }}      
 }
 
-.section1 video:nth-child(3){
-    width: 100%;
-    z-index: -1;
-    display:none;
-
-    @media (max-width: 900px)
-    display: none; 
-
-    @media (max-width: 500px)
-    display: block; 
+.bank {
+    position: absolute;
+    left: -10%;
+    top:200px;
+    scale: 200%;
+    @media (max-width: 1000px) {
+        display: none;
+}
 }
 
-@keyframes plantgrow {
-    from {opacity: 0;};
-    to {opacity: 1;};
+.raamlayer1 {
+    position: absolute;
+    top: -10%;
+    right: 20%;
+    scale: 30%;
+    @media (max-width: 500px) {
+        display:none;
+    }      
 }
 
+.raamlayer2 {
+    position:absolute;
+    top: -10%;
+    right: 20%;
+    scale: 30%;
+    @media (max-width: 500px) {
+        display:none;
+    }    
+}
+
+.welkomlayer {
+    position:absolute;
+    height: 100vh;
+    background-color:#F8E9C2
+    z-index: 1;
+}
+
+.section1 {
+    height: 70vh;
+    background-image: linear-gradient(lightgrey, #FFFF);   
+}
 
 .topnav {
     background-color: #F8E9C2;
@@ -172,7 +215,7 @@ img {
     background-color: #F8E9C2;
     text-align: center;
     padding:70px;
-
+    z-index: 1;
 }
 
 .welkom button{
@@ -193,7 +236,7 @@ img {
     top: 30%;
 }
 
-.detuintext {
+.detuin {
     background-color:#4F7242;
     color:#ffffff;
     text-align: center;
@@ -201,9 +244,50 @@ img {
     font-size: 22px;
 }
 
-.detuin {
-    transform: perspective(300px) rotateX(10deg) scale(42%) scaleX(1.7);
+.buttons {
+    /*dit moet nog opgelost worden*/
+    display: flex;
+    height: 50px;
+    width: 50px;
+    box-shadow: #000000;
 }
+
+.buttons:hover {
+    transform: zoom-effect;
+    animation-name: zoom-effect;
+}
+
+@keyframes zoom-effect{
+    from {
+        transform: translate(100%);
+    }
+    to {
+        transform: translate(110%);
+    }
+}
+
+buttons img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.tablecontentmobile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 5px;
+    padding: 70px;
+}
+
+.block {
+    display: inline;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;;
+}
+
 
 .workshopstitle {
     grid-column: 1/2;
